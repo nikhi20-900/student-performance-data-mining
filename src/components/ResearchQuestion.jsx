@@ -4,7 +4,7 @@ import { researchQuestion } from '../data/projectData';
 
 export default function ResearchQuestion() {
   return (
-    <div className="my-8">
+    <div id="research-question" className="my-8 scroll-mt-20">
       <div className="relative overflow-hidden rounded-xl border border-blue-200/80 bg-gradient-to-r from-blue-50/70 via-slate-50 to-indigo-50/50 p-6 sm:p-8 shadow-xs">
         <div className="flex items-start gap-4">
           <div className="p-2.5 rounded-lg bg-blue-600 text-white shrink-0 shadow-xs hidden sm:flex">

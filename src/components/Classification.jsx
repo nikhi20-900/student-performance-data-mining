@@ -4,6 +4,7 @@ import { classificationModels } from '../data/projectData';
 import ModelComparison from './ModelComparison';
 import ConfusionMatrices from './ConfusionMatrices';
 import ClassificationFindings from './ClassificationFindings';
+import KeyTakeaways from './KeyTakeaways';
 
 export default function Classification() {
   const getModelIcon = (id) => {
@@ -33,6 +34,13 @@ export default function Classification() {
             Classification was used to predict whether a student belongs to the <span className="font-semibold text-rose-700">Low</span>, <span className="font-semibold text-amber-700">Medium</span>, or <span className="font-semibold text-emerald-700">High</span> performance category.
           </p>
         </div>
+
+        {/* Key Takeaways */}
+        <KeyTakeaways findings={[
+          { type: 'success', text: 'Decision Tree achieved the highest accuracy at 84%' },
+          { type: 'insight', text: 'SVM and KNN showed similar performance (79-80% accuracy)' },
+          { type: 'insight', text: 'Model predictions are most reliable for Medium performers' }
+        ]} />
 
         {/* 4 Model Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-12">

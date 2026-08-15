@@ -4,7 +4,7 @@ import { futureScope } from '../data/projectData';
 
 export default function FutureScope() {
   return (
-    <section className="py-12 sm:py-16 border-b border-slate-200 bg-slate-50/50">
+    <section id="future-scope" className="py-12 sm:py-16 border-b border-slate-200 bg-slate-50/50 scroll-mt-16">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="mb-8">
@@ -27,7 +27,7 @@ export default function FutureScope() {
           {futureScope.map((item, idx) => (
             <div
               key={idx}
-              className="academic-card p-4 bg-white border border-slate-200 flex flex-col justify-between hover:border-blue-300 hover:shadow-sm transition-all"
+              className="academic-card p-4 bg-white border border-slate-200 flex flex-col justify-between hover:border-blue-300 transition-all"
             >
               <div>
                 <span className="text-[10px] font-mono font-bold text-slate-400 block mb-1">

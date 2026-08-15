@@ -4,7 +4,7 @@ import { preprocessingSteps, splitStats } from '../data/projectData';
 
 export default function Preprocessing() {
   return (
-    <section className="py-12 sm:py-16 border-b border-slate-200 bg-slate-50/50">
+    <section id="preprocessing" className="py-12 sm:py-16 border-b border-slate-200 bg-slate-50/50 scroll-mt-16">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="mb-8">

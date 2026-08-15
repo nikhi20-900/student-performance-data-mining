@@ -1,14 +1,18 @@
 import React from 'react';
-import { BookOpen, GraduationCap } from 'lucide-react';
+import { GraduationCap } from 'lucide-react';
 import { projectMeta } from '../data/projectData';
 
 export default function Footer() {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
-    <footer className="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
+    <footer className="bg-slate-900 text-slate-400 py-12 border-t border-slate-800 lg:ml-64 transition-all">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col sm:flex-row items-center justify-between gap-6 pb-8 border-b border-slate-800">
           <div className="flex items-center gap-3">
-            <div className="w-8 h-8 rounded-lg bg-blue-600 text-white flex items-center justify-center font-serif text-sm font-bold shadow-xs">
+            <div className="w-8 h-8 rounded-lg bg-blue-600 text-white flex items-center justify-center font-serif text-sm font-bold shadow-xs shrink-0">
               <GraduationCap className="w-4 h-4" />
             </div>
             <div>
@@ -22,7 +26,9 @@ export default function Footer() {
           </div>
 
           <div className="flex items-center gap-4 text-xs font-mono">
-            <a href="#overview" className="hover:text-white transition-colors">Top of Page</a>
+            <button onClick={scrollToTop} className="hover:text-white transition-colors cursor-pointer">
+              Top of Page
+            </button>
             <span className="text-slate-700">•</span>
             <a href="#classification" className="hover:text-white transition-colors">Classification</a>
             <span className="text-slate-700">•</span>
@@ -34,7 +40,7 @@ export default function Footer() {
           <div>
             Built for academic and educational purposes.
           </div>
-          <div className="font-serif italic text-slate-400">
+          <div className="font-serif italic text-slate-400 text-center sm:text-right">
             Bachelor of Computer Applications (BCA) — Data Mining Curriculum
           </div>
         </div>

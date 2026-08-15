@@ -4,7 +4,7 @@ import { limitations } from '../data/projectData';
 
 export default function Limitations() {
   return (
-    <section className="py-12 sm:py-16 border-b border-slate-200 bg-white">
+    <section id="limitations" className="py-12 sm:py-16 border-b border-slate-200 bg-white scroll-mt-16">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="mb-8">

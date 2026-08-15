@@ -4,7 +4,7 @@ import { clusteringData } from '../data/projectData';
 
 export default function HierarchicalClustering() {
   return (
-    <div className="academic-card p-6 sm:p-8 bg-white mb-8">
+    <div id="hierarchical" className="academic-card p-6 sm:p-8 bg-white mb-8 scroll-mt-20">
       <div className="mb-6">
         <div className="flex items-center gap-2 mb-1">
           <span className="text-xs font-bold uppercase tracking-wider text-slate-500">Method 2</span>

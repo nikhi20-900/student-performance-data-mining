@@ -16,9 +16,9 @@ export default function TargetDistribution() {
     if (active && payload && payload.length) {
       const data = payload[0].payload;
       return (
-        <div className="bg-slate-900 text-white p-3 rounded-lg shadow-lg text-xs font-sans border border-slate-700">
-          <div className="font-bold text-sm mb-1">{data.name} Performance</div>
-          <div className="text-slate-300">Score Range: <span className="font-mono text-white">{data.range}</span></div>
+        <div className="bg-slate-900/95 backdrop-blur-xs text-white p-3 rounded-xl shadow-xl text-xs font-sans border border-slate-700">
+          <div className="font-bold text-sm mb-1 text-slate-100">{data.name} Performance</div>
+          <div className="text-slate-300">Score Range: <span className="font-mono text-white font-semibold">{data.range}</span></div>
           <div className="text-slate-300">Students: <span className="font-mono text-white font-bold">{data.students}</span> ({data.percentage})</div>
         </div>
       );
@@ -27,7 +27,7 @@ export default function TargetDistribution() {
   };
 
   return (
-    <section className="py-12 sm:py-16 border-b border-slate-200 bg-white">
+    <section id="target-distribution" className="py-12 sm:py-16 border-b border-slate-200 bg-white scroll-mt-16">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="mb-8">

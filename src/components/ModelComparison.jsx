@@ -40,7 +40,7 @@ export default function ModelComparison() {
   const CustomTooltip = ({ active, payload, label }) => {
     if (active && payload && payload.length) {
       return (
-        <div className="bg-slate-900 text-white p-3 rounded-lg shadow-xl text-xs font-sans border border-slate-700">
+        <div className="bg-slate-900/95 backdrop-blur-xs text-white p-3 rounded-xl shadow-xl text-xs font-sans border border-slate-700">
           <div className="font-bold text-sm mb-2 text-slate-100">{label}</div>
           <div className="space-y-1 font-mono">
             {payload.map((item, idx) => (
@@ -57,7 +57,7 @@ export default function ModelComparison() {
   };
 
   return (
-    <div className="mb-12">
+    <div id="model-comparison" className="mb-12 scroll-mt-20">
       <div className="mb-6 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
         <div>
           <h3 className="text-xl font-bold text-slate-900 tracking-tight">

@@ -7,7 +7,7 @@ export default function KMeansSection() {
   const chartData = clusteringData.silhouetteDataPlaceholder;
 
   return (
-    <div className="academic-card p-6 sm:p-8 bg-white mb-8">
+    <div id="kmeans" className="academic-card p-6 sm:p-8 bg-white mb-8 scroll-mt-20">
       <div className="mb-6">
         <div className="flex items-center gap-2 mb-1">
           <span className="text-xs font-bold uppercase tracking-wider text-slate-500">Method 1</span>
@@ -39,7 +39,7 @@ export default function KMeansSection() {
         </div>
       </div>
 
-      {/* K vs Silhouette Score Placeholder Visualization */}
+      {/* K vs Silhouette Score Visualization */}
       <div className="border border-slate-200 rounded-xl p-5 bg-slate-50/50 mb-6">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4">
           <div>

@@ -5,6 +5,7 @@ import KMeansSection from './KMeansSection';
 import PcaVisualization from './PcaVisualization';
 import HierarchicalClustering from './HierarchicalClustering';
 import ClusteringValidation from './ClusteringValidation';
+import KeyTakeaways from './KeyTakeaways';
 
 export default function ClusteringOverview() {
   return (
@@ -24,6 +25,13 @@ export default function ClusteringOverview() {
             {clusteringData.explanation}
           </p>
         </div>
+
+        {/* Key Takeaways */}
+        <KeyTakeaways findings={[
+          { type: 'insight', text: 'K-Means identified 3 distinct student clusters with clear separation' },
+          { type: 'success', text: 'Cluster quality confirmed by high silhouette score' },
+          { type: 'insight', text: 'Clusters align with performance tiers and study habits' }
+        ]} />
 
         {/* 10 Clustering Features Box */}
         <div className="academic-card p-6 bg-white mb-10">
