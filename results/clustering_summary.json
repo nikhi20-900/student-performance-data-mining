@@ -1,0 +1,1 @@
+{"best_k":2,"kmeans_silhouette":0.1334925706,"agglomerative_silhouette":0.1204606888,"ari":0.0149498949,"nmi":0.0227651555,"cluster_sizes":{"0":198,"1":197},"performance_distribution":{"Medium":192,"Low":130,"High":73}}

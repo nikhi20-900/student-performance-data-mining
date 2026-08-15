@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.venv/
+venv/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Project runtime
+.matplotlib_cache/
+results/*.png
+results/*.jpg
+results/*.jpeg
+
+# OS/editor
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Node / frontend artifacts from the workspace
+node_modules/
+dist/
+package-lock.json
+
+# Dataset downloads and archives
+student-performance.zip
+*.zip
+
+# Keep project result artifacts tracked
+# results/ is intentionally not ignored so classifier_metrics.csv and clustering_summary.json can be committed
